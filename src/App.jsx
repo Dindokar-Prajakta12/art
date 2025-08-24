@@ -4,19 +4,17 @@ import { motion, AnimatePresence } from "framer-motion";
 import Confetti from "react-confetti";
 import './index.css';
 import './App.css';
-// import ph1 from './assets/ph1.jpg';
-// import ph2 from './assets/ph2.jpg';
-// import ph3 from './assets/ph3.jpg';
-// import ph4 from './assets/ph4.jpg';
-// import ph5 from './assets/ph5.jpg';
-// import ph6 from './assets/ph6.jpg';
-// import ph7 from './assets/ph7.jpg';
-// import ph8 from './assets/ph8.jpg';
-// import ph9 from './assets/ph9.jpg';
-// import ph10 from './assets/ph10.jpg';
-// import ph11 from './assets/ph11.jpg';
-// import ph12 from './assets/ph12.jpg';
-// import ph13 from './assets/ph13.jpg';
+import ph1 from './assets/ph1.jpg';
+import ph2 from './assets/ph2.jpg';
+import ph3 from './assets/ph3.jpg';
+import ph4 from './assets/ph4.jpg';
+import ph5 from './assets/ph5.jpg';
+import ph6 from './assets/ph6.jpg';
+
+import ph8 from './assets/ph8.jpg';
+import ph9 from './assets/ph9.jpg';
+import ph10 from './assets/ph10.jpg';
+
 
 
 // --- Utility: Fancy container with soft glass look ---
@@ -166,28 +164,28 @@ const Home = () => {
 };
 
 // --- Gallery Page ---
-const samplePhotos = [
-  // Replace these URLs with your own images
- "https://drive.google.com/file/d/1J7QMMePsQU2wMPbYJ6oe8Yz6W5XIgQ2J/view?usp=drive_link",
- "https://drive.google.com/file/d/1X0Jrcg0eoEG3Wviw7etFbYErhotOM3Nl/view?usp=drive_link",
- "https://drive.google.com/file/d/1X7WVEAE7i6m7SHFyzXNoQC_fOFS0wDuo/view?usp=drive_link",
- "https://drive.google.com/file/d/1X-9CJ3CaaFygzjsCUTmb_VuJSaGyD0Bo/view?usp=drive_link",
- "https://drive.google.com/file/d/1rfAbh63R9pQbQ_Cc7PHh8H0Dipss7Fad/view?usp=drive_link",
- "https://drive.google.com/file/d/1XDcakPszCdGQcHQJLFSAZ7_M0cnb49oE/view?usp=drive_link",
- "https://drive.google.com/file/d/1XU_3QYWvBH5OIzDSJXhy8kyzG9JK0Z7B/view?usp=drive_link",
- "https://drive.google.com/file/d/10M4FSQfERTc7i3zsO3XXAESOkBZPJGi9/view?usp=drive_link",
- "https://drive.google.com/file/d/1XYS2nGU2KSdmUF_w5XiVA9Xxf5JoeFdt/view?usp=drive_link",
- "https://drive.google.com/file/d/1XNAgvFS7U8Yc1cfRvxt6lWXHxgToqcHG/view?usp=drive_link",
- "https://drive.google.com/file/d/1XKQcJTtGUvIL8SkxqAcN58iHnggTs6P2/view?usp=drive_link",
- "https://drive.google.com/file/d/1X6DOxVTDWldcjsHgNZCx9bmXf-xOJFod/view?usp=drive_link",
- "https://drive.google.com/file/d/1X8Jw5w7IJnhL7yHq6PpImY8RrKGBguxf/view?usp=drive_link",
-];
-
-
 // const samplePhotos = [
 //   // Replace these URLs with your own images
-//  ph1, ph2, ph3, ph4, ph5, ph6, ph7, ph8, ph9, ph10, ph11, ph12, ph13,
+//  "https://drive.google.com/file/d/1J7QMMePsQU2wMPbYJ6oe8Yz6W5XIgQ2J/view?usp=drive_link",
+//  "https://drive.google.com/file/d/1X0Jrcg0eoEG3Wviw7etFbYErhotOM3Nl/view?usp=drive_link",
+//  "https://drive.google.com/file/d/1X7WVEAE7i6m7SHFyzXNoQC_fOFS0wDuo/view?usp=drive_link",
+//  "https://drive.google.com/file/d/1X-9CJ3CaaFygzjsCUTmb_VuJSaGyD0Bo/view?usp=drive_link",
+//  "https://drive.google.com/file/d/1rfAbh63R9pQbQ_Cc7PHh8H0Dipss7Fad/view?usp=drive_link",
+//  "https://drive.google.com/file/d/1XDcakPszCdGQcHQJLFSAZ7_M0cnb49oE/view?usp=drive_link",
+//  "https://drive.google.com/file/d/1XU_3QYWvBH5OIzDSJXhy8kyzG9JK0Z7B/view?usp=drive_link",
+//  "https://drive.google.com/file/d/10M4FSQfERTc7i3zsO3XXAESOkBZPJGi9/view?usp=drive_link",
+//  "https://drive.google.com/file/d/1XYS2nGU2KSdmUF_w5XiVA9Xxf5JoeFdt/view?usp=drive_link",
+//  "https://drive.google.com/file/d/1XNAgvFS7U8Yc1cfRvxt6lWXHxgToqcHG/view?usp=drive_link",
+//  "https://drive.google.com/file/d/1XKQcJTtGUvIL8SkxqAcN58iHnggTs6P2/view?usp=drive_link",
+//  "https://drive.google.com/file/d/1X6DOxVTDWldcjsHgNZCx9bmXf-xOJFod/view?usp=drive_link",
+//  "https://drive.google.com/file/d/1X8Jw5w7IJnhL7yHq6PpImY8RrKGBguxf/view?usp=drive_link",
 // ];
+
+
+const samplePhotos = [
+  // Replace these URLs with your own images
+ ph1, ph2, ph3,ph4, ph5,ph6, ph8, ph10,
+];
 
 const Gallery = () => {
   return (
@@ -195,7 +193,7 @@ const Gallery = () => {
       title="Our Photo Memories"
       subtitle="A tiny gallery of big feelings — hover or tap to see them come alive."
     >
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+      {/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
         {samplePhotos.map((src, i) => (
           <motion.figure
             key={i}
@@ -223,10 +221,9 @@ const Gallery = () => {
             </motion.div>
           </motion.figure>
         ))}
-      </div>
+      </div> */}
 
-      // ...inside your Gallery component
-{/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
   {samplePhotos.map((src, i) => (
     <motion.figure
       key={i}
@@ -254,7 +251,7 @@ const Gallery = () => {
       </motion.div>
     </motion.figure>
   ))}
-</div> */}
+</div>
     </Page>
   );
 };
